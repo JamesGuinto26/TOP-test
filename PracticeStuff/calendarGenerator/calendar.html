@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar Picker</title>
+
+    <link rel="stylesheet" href="calendar.css">
+</head>
+<body>
+
+    <div class="selector">
+        <label for="calendar-selector">Select Month: </label>
+
+        <select id="calendar-selector">
+            <option value="January">January</option>
+            <option value="February">February</option>
+            <option value="March">March</option>
+            <option value="April">April</option>
+            <option value="May">May</option>
+            <option value="June">June</option>
+            <option value="July">July</option>
+            <option value="August">August</option>
+            <option value="September">September</option>
+            <option value="October">October</option>
+            <option value="November">November</option>
+            <option value="December">December</option>
+
+        </select>
+    </div>
+
+    <h1 id="month-label">No Month Selected</h1> <!-- textContent will change according to month -->
+
+    <div id="calendar-container">
+        <ul class="calendar-grid">
+            <!-- individual cards will be appended here as a child -->
+        </ul>
+    </div>
+
+    <h2 id="date-selected">Date selected: <span class="date-holder">None</span></h2>
+
+    <script src="calendar.js"></script>
+
+</body>
+</html>

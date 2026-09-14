@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 20px;
+}
+
+.selector {
+    text-align: center;
+}
+
+#month-label {
+    text-align: center;
+}
+
+#calendar-container .calendar-grid {
+    align-items: center;
+    justify-content: center;
+
+    display: grid;
+    grid-template-columns: repeat(6, 100px);
+
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+#calendar-container .calendar-grid li {
+    list-style: none;
+}
+
+#calendar-container .calendar-grid li button{
+
+    width: 100px;
+    height: 100px;
+    font-size: 20px;
+    background-color: lightblue;
+}
+
+#calendar-container .calendar-grid button.selected {
+    background-color: orange;
+}
+
+#date-selected {
+    text-align: center;
+}
